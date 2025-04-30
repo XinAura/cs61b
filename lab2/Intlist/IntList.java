@@ -99,7 +99,7 @@ public class IntList {
         IntList p = intList;
         while(A.rest != null) {
             A = A.rest;
-            intList.rest = new IntList(A.first, null);
+            p.rest = new IntList(A.first, null);
             p = p.rest;
         }
         p.rest = B;
